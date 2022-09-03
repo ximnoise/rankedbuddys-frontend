@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import NavView from '../nav-view/nav-view';
+import PlayerSearch from '../player-search/player-search';
 
 import './main-view.css';
 
@@ -53,21 +54,18 @@ function Main() {
 
 	return (
 		<Router>
-			<div className="container">
+			<div className="container-fluid postion-relative">
 				<NavView />
-				<div className="App">
-					<div className="container">
-						<h2>Rankedbuddys</h2>
-						<h3>League of Legends Player Searcher</h3>
-						<input
-							typer="text"
-							onChange={(e) => setSearchText(e.target.value)}
-						></input>
-						<button onClick={(e) => getPlayerGames(e)}>
-							Search for player
-						</button>
-					</div>
-					{gameList.length !== 0 ? (
+				<PlayerSearch />
+			</div>
+		</Router>
+	);
+}
+
+export default Main;
+
+/*
+{gameList.length !== 0 ? (
 						<div>
 							<p>We have data</p>
 							{gameList.map((gameData, index) => (
@@ -94,10 +92,5 @@ function Main() {
 							<p>We have no data</p>
 						</div>
 					)}
-				</div>
-			</div>
-		</Router>
-	);
-}
 
-export default Main;
+*/

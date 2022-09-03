@@ -6,7 +6,7 @@ import './nav-view.css';
 
 function NavView() {
 	return (
-		<nav class="navbar navbar-expand-lg bg-light">
+		<nav class="navbar sticky-top navbar-expand-lg bg-light">
 			<div class="container-fluid">
 				<Link className="navbar-brand" to={'/'}>
 					RANKEDBUDDYS
