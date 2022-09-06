@@ -54,7 +54,7 @@ function Main() {
 
 	return (
 		<Router>
-			<div className="container-fluid postion-relative">
+			<div className="">
 				<NavView />
 				<PlayerSearch />
 			</div>
