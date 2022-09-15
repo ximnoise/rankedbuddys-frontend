@@ -56,7 +56,6 @@ function Main() {
 		<Router>
 			<div className="">
 				<NavView />
-				<PlayerSearch />
 			</div>
 		</Router>
 	);
