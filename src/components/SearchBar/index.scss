@@ -1,0 +1,23 @@
+.search-bar {
+	display: grid;
+	justify-content: center;
+	position: absolute;
+	left: 40%;
+	top: 50%;
+
+	input {
+		width: 400px;
+		height: 50px;
+		border: 1px solid #ffd700;
+		border-radius: 20px;
+	}
+
+	button {
+		height: 53px;
+		width: 50px;
+		position: absolute;
+		margin-left: 355px;
+		border-radius: 20px;
+		border: none;
+	}
+}
