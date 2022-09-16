@@ -11,7 +11,7 @@ const SearchBar = () => {
 	function getSummonerMatchInfo(event) {
 		axios
 			.post(
-				'http://localhost:4000/past5Games',
+				'http://localhost:4000/summonerInfo',
 				{
 					Username: searchText,
 				},
